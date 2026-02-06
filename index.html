@@ -7,6 +7,11 @@
     <title>Expense Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--box icon stylesheet-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!---custom css-->
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
@@ -35,6 +40,43 @@
             </div>
         </div>
     </nav>
+
+
+    <!---------main section------------------>
+    <div class="main-container">
+        <section class="top-section">
+            <!-----income section------>
+            <div class="income">
+                <div class="income-items">
+                    <div class="heading">
+                       <i class='bx bxs-wallet fs-3' style='color:#087d00'  ></i>
+                        <h6 class="fs-2    ">Income</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-----expense section-------------->
+            <div class="expense">
+                <div class="expense-items">
+                    <div class="heading">
+                        <i class='bx bx-trending-down fs-3' style='color:#e62a2a'  ></i>
+                        <h6 class="fs-2">Expense</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------transation section------------>
+        </section>
+
+        <section class="main-content">
+            <div class="add-transactions"></div>
+            <div class="transaction-list"></div>
+            <div class="summary"></div>
+            <div class="spending-graph"></div>
+
+        </section>
+    </div>
 
 
 
