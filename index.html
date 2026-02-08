@@ -15,77 +15,102 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Expense Tracker</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid custom-nav">
+                <a class="navbar-brand" href="#">Expense Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class='bx bxs-home'
+                                    style='color:#f3f2ec'></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class='bx bx-bar-chart-alt' style='color:#f3f2ec'></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class='bx bxs-cog' style='color:#f3f2ec'></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-0" href="#" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <img src="./assets/images/profile.png" width="32" height="32" class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end custom-menu">
+                                <li><a class="dropdown-item" href="#">name</a></li>
+                                <li><a class="dropdown-item" href="#">email</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" id="logoutBtn">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+
+
+        <!---------main section------------------>
+        <div class="main-container">
+            <section class="status-bar">
+                <div class="top-section">
+                    <!-----income section------>
+                    <div class="income-items top-box">
+                        <div class="heading">
+                            <i class='bx bxs-wallet fs-3' style='color:#087d00'></i>
+                            <h6 class="fs-3">Income</h6>
+                        </div>
+                        <div class="money income">
+                            <p>$ <span>2500</span></p>
+                        </div>
+                    </div>
+
+                    <!-----expense section-------------->
+                    <div class="expense-items top-box">
+                        <div class="heading">
+                            <i class='bx bx-trending-down fs-3' style='color:#e62a2a'></i>
+                            <h6 class="fs-3">Expense</h6>
+                        </div>
+                        <div class="money expense">
+                            <p>$ <span>500</span></p>
+                        </div>
+                    </div>
+                </div>
+ <!------net balance after expense------------>
+ <div class="balance">
+    <div class="net-balance">
+        <div class="total-balance">
+            <p>$ <span>2000</span></p>
         </div>
-    </nav>
-
-
-    <!---------main section------------------>
-    <div class="main-container">
-        <section class="top-section">
-            <!-----income section------>
-            <div class="income">
-                <div class="income-items">
-                    <div class="heading">
-                       <i class='bx bxs-wallet fs-3' style='color:#087d00'  ></i>
-                        <h6 class="fs-2    ">Income</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-----expense section-------------->
-            <div class="expense">
-                <div class="expense-items">
-                    <div class="heading">
-                        <i class='bx bx-trending-down fs-3' style='color:#e62a2a'  ></i>
-                        <h6 class="fs-2">Expense</h6>
-                    </div>
-                </div>
-            </div>
-
-
-            <!------transation section------------>
-        </section>
-
-        <section class="main-content">
-            <div class="add-transactions"></div>
-            <div class="transaction-list"></div>
-            <div class="summary"></div>
-            <div class="spending-graph"></div>
-
-        </section>
     </div>
+ </div>
+
+               
+            </section>
+
+            <section class="main-content">
+                <div class="add-transactions"></div>
+                <div class="transaction-list"></div>
+                <div class="summary"></div>
+                <div class="spending-graph"></div>
+
+            </section>
+        </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

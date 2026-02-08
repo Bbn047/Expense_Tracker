@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --brand: #F3F2EC;
+    --nav:#3D74B6;
+    --background: #ECF4E8;
+    --text-green: #00dd00;
+    --text-red: #e70000;
+    --text-muted: #666666;
+    --shadow-soft: rgba(0, 0, 0, 0.08);
+    --btn-background: linear-gradient(180deg, #4988C4, #054179);
+    --box-bg: #ffffff;
+}
+
+body {
+    color: var(--text-clr);
+    background: var(--background);
+}
+
+body p {
+    font-family: Italianno;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.main-container {
+    padding: 10px 10px;
+}
+
+/*================nav bar =====================*/
+nav{
+    background: var(--nav);
+}
+.custom-nav {
+    padding: 0.5rem 1.5rem;
+     background: var(--nav);
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--brand);
+}
+
+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-item i{
+    font-size: 30px;
+}
+.nav-item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*==================top section ======================*/
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    gap: 10px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+     border-bottom: 1px solid black;
+}
+
+.top-box{
+    background: var(--box-bg);
+    padding: 10px 10px;
+    width: 100%;
+    height: 150px;
+    border-radius: 12px;
+}
+
+.top-box .money{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 700;
+     letter-spacing: 5px;
+}
+
+.top-box .income{
+    color: var(--text-green);
+}
+.top-box .expense{
+    color: var(--text-red);
+}
+
+/*-----balcne section -----*/
+.balance{
+    padding: 30px 10px;
+    height: auto;
+}
+.net-balance{
+    border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.total-balance{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+background: #054179;
+}
