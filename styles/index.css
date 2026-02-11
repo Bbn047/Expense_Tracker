@@ -384,3 +384,141 @@ td {
     transform: translateY(1px);
     box-shadow: 0 3px 7px var(--border-clr);
 }
+
+
+/* TABLETS: 768px - 991px */
+@media screen and (max-width: 991px) {
+    /* Stack top section vertically */
+    .top-section {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    .top-box {
+        width: 100%;
+    }
+
+    /* Balance section */
+    .total-balance{
+        width: 60%;
+    }
+    .net-balance {
+        width: 100%;
+         font-size: 24px;
+        padding: 10px;
+    }
+
+    /* Main wrapper grid: stack 2 columns into one */
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    /* Graph section and transaction list adjustments */
+    .summary, .transaction-list {
+        width: 100%;
+    }
+
+    /* Chart indicator spacing */
+    .graph-section{
+        flex-direction: column;
+    }
+   
+    .chart-indicator {
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+    .chart-filters{
+        flex-direction: column;
+    }
+}
+
+/* MOBILE PHONES: below 767px */
+@media screen and (max-width: 767px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .top-box {
+        width: 100%;
+    }
+    .total-balance{
+        width: 60%;
+    } 
+
+    .net-balance{
+        width: 100%;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    /* Stack all columns vertically */
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .add-transactions, .summary, .transaction-list {
+        width: 100%;
+    }
+
+    /* Inputs and buttons full width */
+    .form-items {
+        flex-direction: column;
+    }
+
+    .form-items .input-field {
+        width: 100%;
+    }
+
+    .transaction-button {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .one-btn {
+        width: 48%;
+        margin-top: 5px;
+    }
+
+    /* Make transaction table scrollable horizontally */
+    .transaction-table table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    thead th, tbody td {
+        padding: 8px;
+    }
+
+    /* Graph section adjustments */
+    .graph-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .chart-indicator {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .chart-filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chart-filters select {
+        width: 100%;
+    }
+}
